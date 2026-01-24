@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Stable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="search-bar">
+                <input type="text" class="input-box" placeholder="What do you want to play?">
+            </div>
+        </div>
+        <div class="right-half">
+            <button class="login-btn">Log in</button>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="main-left-part">
+            <div class="library"><p><i class="fa-solid fa-book"></i> Your Library</p></div>
+            <div class="box">
+                <h4>Create your first playlist</h4>
+                <button>Create</button>
+            </div>
+        </div>
+
+        <div class="main-right-part">
+            <div class="music-section">
+                <h2>Top Trending & Fresh Hits</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/aryz.jpg">
+                        <div class="music-play-btn"><i id="0" class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Arz Kiya Hai</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/still rollin.jpg">
+                        <div class="music-play-btn"><i id="1" class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Still Rollin</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/heeriye.jpg">
+                        <div class="music-play-btn"><i id="2" class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Heeriye</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/softly.jpg">
+                        <div class="music-play-btn"><i id="3" class="playMusic fa-solid fa-circle-play"></i></div>
+                        <div class="img-title">Softly</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="images/aryz.jpg" id="masterImg">
+            <div>
+                <div class="img-title-info" id="masterTitle">Arz Kiya Hai</div>
+            </div>
+        </div>
+        <div class="music-controller">
+            <div class="player">
+                <i id="backward" class="player-btns fa-solid fa-backward-step"></i>
+                <i id="masterPlay" class="player-btns fa-solid fa-circle-play"></i>
+                <i id="forward" class="player-btns fa-solid fa-forward-step"></i>
+            </div>
+            <input type="range" id="progressBar" min="0" max="100" value="0">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
